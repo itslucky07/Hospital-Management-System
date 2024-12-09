@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Menu</title>
+    <link rel="stylesheet" href="css/style14.css">
+    <script type="text/javascript">
+        function togglemenu(){
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <div id="sidebar" class="active">
+        <div class="toggle-btn" onclick="togglemenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+</body>
+</html>

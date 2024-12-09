@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-tooth"></i>dentist clinic</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#team">Team</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#blog">Blog</a>
+        </nav>
+        <a href="#" class="btn">Make Appointment</a>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </header>
+    <!-- header end -->
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Make Your Smile Shine</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium accusantium architecto perferendis ut! Laudantium aspernatur placeat, quibusdam illum odit assumenda! Ipsa, repellat porro. Et, fuga harum. Accusamus, necessitatibus asperiores.</p>
+            <a href="#" class="btn">Make Appointment</a>
+        </div>
+    </section>
+    <!-- home end -->
+    <!-- about us section -->
+    <section class="about" id="about">
+        <h1 class="heading"> About Us</h1>
+        <div class="row">
+            <div class="image">
+                <img src="http://bostondentalgroup.com/wp-content/uploads/2016/08/shutterstock_271586234.jpg" height="460" >
+            </div>
+            <div class="content">
+                <h3>Our Clinic is Made for You to be Smiling All the Time</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nihil. Mollitia possimus, quod culpa quos nostrum totam, nemo labore delectus amet omnis sed aliquam provident, quae dolorem modi molestias cumque.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- about end -->
+    <!-- services -->
+    <section class="services" id="services">
+        <h1 class="heading">Our Services</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="https://d3b3by4navws1f.cloudfront.net/shutterstock_257732602.jpg" height="450">
+                <h3>Online Schedule</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, et! Natus possimus non, voluptatum quasi autem, illum nam porro maxime id dolorum soluta ipsam, nemo accusantium assumenda dolor nulla laudantium!</p>
+            </div>
+            <div class="box">
+                <img src="https://d3b3by4navws1f.cloudfront.net/shutterstock_257732602.jpg" height="450">
+                <h3>Cosmetic Feeling</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, et! Natus possimus non, voluptatum quasi autem, illum nam porro maxime id dolorum soluta ipsam, nemo accusantium assumenda dolor nulla laudantium!</p>
+            </div>
+            <div class="box">
+                <img src="https://d3b3by4navws1f.cloudfront.net/shutterstock_257732602.jpg" height="450">
+                <h3>Oral Hygiene Experts</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, et! Natus possimus non, voluptatum quasi autem, illum nam porro maxime id dolorum soluta ipsam, nemo accusantium assumenda dolor nulla laudantium!</p>
+            </div>
+        </div>
+    </section>
+    <!-- service end -->
+    <section class="team" id="team">
+        <h1 class="heading">Our Team</h1>
+        <div class="swiper team-slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="http://duhoccec.vn/wp-content/uploads/2017/11/dreamstime_m_5667303524.jpg">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div> 
+                    </div>
+                    <div class="content">
+                        <h3>John Lacy</h3>
+                        <span>General Surgeon</span>
+                    </div>
+                </div>
+                <!-- Add more team members as needed -->
+            </div>
+        </div>
+    </section>
+    <!-- team end -->
+
+    <script>
+        var swiper = new Swiper(".team-slide", {
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 20,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                991: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+    </script>
+</body>
+</html>
+
+<style>
+  *{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+
+}
+section{
+    padding: 5rem 7%;
+}
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+html::-webkit-scrollbar-track{
+    background: var(--primary);
+    border-radius: 5rem;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    background: var(--primary);
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: var(--white);
+}
+
+/* header */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+.header .logo{
+    font-size:2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+.header .logo i{
+    color: var(--primary);
+    padding-right: .5rem;
+}
+.header .navbar a{
+   font-size: 1.7rem;
+   color: var(--black);
+   margin: 0 1rem;
+}
+.header .navbar a:hover{
+    color: var(--primary);
+
+}
+.header .btn{
+    margin-top: 0;
+
+}
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--black);
+    margin-left: 1.7rem;
+}
+#menuu-btn:hover{
+    color: var(--primary);
+}
+/* header end */
+/* home */
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("https://www.pasadenahealthcenter.com/es/wp-content/uploads/2017/02/canstockphoto8509375-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 60rem;
+    padding-left: 6rem;
+    padding-top: 10rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    color: var(--black);
+    line-height: 1.2;
+}
+.home .content p{
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+/* home end */
+/* about us */
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.about .row .image{
+    flex: 1 1 40rem;
+}
+.about .row .image img{
+    width:100%;
+    height:100%;
+
+}
+.about .row .content{
+    flex: 1 1 40rem;
+}
+.about .row .content h3{
+    color: var(--black);
+    font-size: 3.5rem;
+    line-height: 1.5rem;
+}
+.about .row .content p{
+    font-size: 1.4rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+    line-height: 2;
+}
+/* about end */
+/* services */
+
+.services{
+    background: var(--light-bg);
+}
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem ,1fr));
+    gap: zrem;
+}
+.services .box-container .box{
+    padding: 4rem;
+    text-align: center;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+
+}
+.services .box-container .box:hover{
+    background: var(--hover);
+}
+.services .box-container .box img{
+    margin: 1rem 0;
+    height: 10rem;
+}
+.services .box-container .box h3{
+    font-size: z rem;
+    padding: 1rem 0;
+    color: var(--black);
+}
+.services .box-container .box p{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+/* /services section ends/
+/team section/ */
+.team .slide{
+    text-align: center;
+}
+.team .slide .image{
+    position: relative;
+    overflow: hidden;
+}
+.team .slide .image img{
+    width: 100%;
+
+}
+.team .slide .image .share{
+    padding: 2rem;
+    position: absolute;
+    bottom: -10rem;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .8);
+}
+.team .slide:hover .image .share{
+    bottom: 0;
+}
+.team .slide .image .share a{
+    font-size: 3rem;
+    margin: 0 1rem;
+}
+.team .slide .image .share a:hover{
+    color: var(--secondary);
+}
+.team .slide .content{
+    display: flex;
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.team .slide .content h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+.team .slide .content span{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--light-color);
+}
+/*team section ends */
+</style>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Appointment Scheduling</title>
+<link rel="stylesheet" href="css/sche.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Appointment Scheduling</h1>
+    </header>
+    
+    <section id="scheduleSection">
+      <h2>Schedule an Appointment</h2>
+      <form class="schedule-form">
+        <label for="doctor">Select Doctor:</label>
+        <select id="doctor" name="doctor" required>
+          <option value="doctor1">Doctor 1</option>
+          <option value="doctor2">Doctor 2</option>
+          <option value="doctor3">Doctor 3</option>
+          <!-- Add more doctors as needed -->
+        </select>
+        
+        <label for="day">Select Day:</label>
+        <input type="date" id="day" name="day" required>
+        
+        <label for="startTime">Appointment Start Time:</label>
+        <input type="time" id="startTime" name="startTime" required>
+        
+        <label for="endTime">Appointment End Time:</label>
+        <input type="time" id="endTime" name="endTime" required>
+        
+        <label for="duration">Appointment Duration (minutes):</label>
+        <input type="number" id="duration" name="duration" min="15" required>
+        
+        <button type="submit">Schedule</button>
+      </form>
+    </section>
+    
+    <!-- Other sections and footer -->
+    
+  </div>
+</body>
+</html>
